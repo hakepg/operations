@@ -1,0 +1,261 @@
+# import math
+# print(math.ceil(12.1))
+# print(math.sqrt(12))
+# print(math.floor(13.6))
+# print(math.pow(15,3))
+# print(math.trunc(205))
+# print(math.gcd(12,2))
+# print(math.sin(30))
+# print(math.cos(60))
+# print(math.tan(45))
+#
+# math.pi
+# print(math.inf)
+# print(math.e)
+# x = int(input('enter any value'))
+# y = int(input('enter any value'))
+# # z = int(input('enter any value'))
+
+#
+# min = x if x>y and x>z else y if y>z else z
+# print(min)
+#
+# print('both num are equal' if x==y else 'first numb is less than 2nd' if x<y else 'first numb is greater than 2nd')
+
+# print('area of circle..')
+# r=2
+# area = math.pi*r**2
+# print(area)
+
+# print('the sum:',int(input('Enter value'))+ int(input('enter 2nd value')))
+
+# eid=int(input('enter employee id:'))
+# ename=(input('enter employee name:'))
+# eage=int(input('enter employee age:'))
+# esalary=int(input('enter employee salary:'))
+# eaddress=(input('enter employee address:'))
+# print('employee id is {}'.format(eid))
+# print('employee name is {}'.format(ename))
+# print('employee age is {}'.format(eage))
+# print('employee salary is {}'.format(esalary))
+# print('employee address is {}'.format(eaddress))
+
+# print('read multiple values from the keyboard in a single line:')
+# a,b=input('enter two values').split()
+# a,b=[int(x) for x in input('enter 2 numbers:').split()]
+# print(a*b)
+
+# a,b,c=[float(x) for x in input('enter 3 numbers:').split()]
+# print(a+b+c)
+
+# x=eval('10*20')
+# print(x)
+#
+# type(x)
+
+# x = eval(input('enter expression'))
+# print(x)
+
+# x = int(input('enter expression'))
+# print(x)
+
+# print('hello',end=' ')
+# print('pratu',end=' ')
+# print('atul')
+'''
+print('smallest of two num.')
+a,b=[int(x)for x in input('enter two num:').split()]
+if a<b:
+    print('smallest num is:',a)
+else:
+    print('smallest num is b:',b)
+'''
+'''
+print('smallest of three num..')
+a,b,c=[int(x)for x in input('enter the three num:').split()]
+if a<b and a<c:
+    print('smallest num is ==>',a)
+elif b<c:
+    print('smallest num is==>',b)
+else:
+    print('smallest num is==>',c)
+'''
+
+'''
+print('given num is even or odd:')
+num = int(input('enter the number..'))
+if num%2==0:
+    print('the number is even..')
+else:
+    print('the number is odd..')
+'''
+'''
+print('check whether given num is in between 1 & 100..')
+num = int(input('enter the number: '))
+if num<=100 and num>=1:
+    print('the num',num,'is in between 1 to 100')
+else:
+    print('the num',num,'is not in between 1 to 100')
+'''
+'''
+print('take value from keyboard and print its english value.')
+num=int(input('enter a digit from 1 to 10:'))
+if num==0:
+    print('ZERO')
+elif num==1:
+    print('ONE')
+elif num==2:
+    print('TWO')
+elif num==3:
+    print('THREE')
+elif num==4:
+    print('FOUR')
+elif num==5:
+    print('FIVE')
+elif num==6:
+    print('SIX')
+elif num==7:
+    print('SEVEN')
+elif num==8:
+    print('EIGHT')
+elif num==9:
+    print('NINE')
+elif num==10:
+    print('TEN')
+else:
+    print('please enter number between 1 to 10..')
+'''
+
+'''
+print('to print characters present in the given string.')
+num=input('enter some characters:')
+for i in num:
+    print(i)
+
+print('print characters present in string index wise..')
+num = input('Enter the number.')
+x=0
+for i in num:
+    print(i,'is present at',x)
+    x=x+1
+'''
+'''
+# for i in range(10):
+#     print('hello')
+#
+# for i in range(1,11):
+#     print(i)
+
+
+# print('To display odd no from 0 to 20..')
+# for x in range(21):
+#     if x%2!=0:
+#         print(x)
+
+# for x in range(10,0,-1):
+#     print(x)
+
+
+# print('sum of numbers present inside list..')
+# list=eval(input('enter the list'))
+# sum=0
+# for x in list:
+#     sum = sum+x
+# print('the sum of list is',sum)
+
+list=[10,20,30,[20,60]]
+print(list.copy())
+
+'''
+
+'''
+print('nos from 1 to 10 using while loop..')
+x=1
+while x<=10:
+    print(x)
+    x=x+1
+
+print('To display sum of 1st n numbers..')
+num=int(input('enter the number..'))
+sum=0
+i=1
+while i<=num:
+    sum=sum+i
+    i=i+1
+print('the sum of first n num is',sum)
+'''
+
+'''
+print('enter some name until entering durga.')
+# num=input('enter the name.')
+name=''
+while name!='durga':
+    name=input('enter the name:')
+print('thanks for confirmation..')
+'''
+'''
+# print('Infinite Loop')
+# i=0
+# while True:
+#     print('Hello',i)
+#     i=i+1
+'''
+
+# for i in range(4):
+#     for j in range(4):
+#         print('i=',i,'j=',j)
+
+'''
+n=7
+for row in range(1,n+1):
+    print('*'*row)
+    # for column in range(row):
+    #     print('*'*)
+    # print('')
+    
+for row in range(1,n+1):
+    print(' '*(n-row),end='')
+    for col in range(row):
+        print('*',end=' ')
+    print('')
+'''
+
+# for i in range(1,11):
+#     if i==7:
+#         continue
+#     print(i)
+
+# cart=[12,30,50,500,600]
+# for item in cart:
+#     if item>=500:
+#         print('to place this order insurance must me required..')
+#         break
+#     print(item)
+
+
+# num=[10,100,0,85,96,0,45,0]
+# for item in num:
+#     if item==0:
+#         print('not divide with zero..just skipping.')
+#         continue
+#     print('100/{}={}'.format(item,100/item))
+    # print(item)
+
+# cart=[10,20,30,40,50]
+# for item in cart:
+#     if item>=500:
+#         print('we cannot process this order.')
+#         break
+#     print(item)
+# else:
+#     print('congrats..all items process successfully.')
+
+cart=[20,51,40,600,500,30,45]
+for item in cart:
+    if item>=500:
+        print('we cannot process this order')
+        break
+    print(item)
+else:
+    print('congo..order is passed')
+

@@ -1,0 +1,73 @@
+s='durga'
+type(s)
+print(s)
+
+s='i love python'
+print(s)
+s="i love 'python'"
+print(s)
+s="i love \'python\' vry much"
+print(s)
+s="'I love python'"
+print(s)
+s='i love python and \'my\' family'
+print(s)
+s="The \'python\' notes by \"durga\" is very helpful"
+print(s)
+s='the learning \'python\' is very easy and "interesting" language'
+print(s)
+s='''the learning \'''python\''' is very easy and "interesting" language'''
+print(s)
+'''
+s=input('enter some string:')
+i=0
+for str in s:
+    print('the character present at +ve index {} and at -VE index {} is {}'.format(i,i-len(s),str))
+    i=i+1
+'''
+s='Learning python is very very easy'
+s[1:5:1]
+print(s)
+print(len(s))
+n=len(s)
+i=0
+print('forward direction')
+while i<n:
+    print(s[i],end='')
+    i+=1
+
+print('backward direction')
+i=-1
+
+'''
+while i>=-n:
+    print(s[i],end='')
+    i=i-1
+    print('\n')
+
+for i in s[::]:
+    print(i,end='')
+
+for i in s[::-1]:
+    print(i,end='')
+
+'''
+print(s)
+print('python' in s)
+print('the' not in s)
+
+s=input('enter main string')
+substr=input('enter sub string')
+if substr in s:
+    print(substr,'is found in main string')
+else:
+    print(substr,'is not found in main string')
+
+s1=input('enter the 1st string')
+s2=input('enter thr 2nd string')
+if s1==s2:
+    print('both strings are equal')
+elif s1>s2:
+    print('s1 is greater than s2')
+else:
+    print('s1 is less than s2')

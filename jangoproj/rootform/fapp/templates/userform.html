@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserInformation</title>
+</head>
+<body>
+        <form method="post" action="http://localhost:8000/saveform/">
+          {% csrf_token %}
+          {{ userform }}
+          <button type="submit">Submit</button>
+        </form>
+</body>
+</html>

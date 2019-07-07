@@ -1,0 +1,42 @@
+....................................................OneToOne.................................................................
+
+import os
+os.getcwd()
+os.chdir('E:\\python_my_practice\\flaskproj\\assosciation_relationship\\')
+from OneToOne import *
+db.create_all()
+e1 =Employee(name='pgh', age=25, salary=28000)
+e2 =Employee(name='agh', age=26, salary=20000)
+e3 =Employee(name='ggh', age=28, salary=26000)
+e4 =Employee(name='sgh', age=24, salary=27000)
+e5 =Employee(name='gsh', age=22, salary=29000)
+db.session.add_all([e1,e2,e3,e4,e5])
+db.session.commit()
+c1=Company(name='infy', address = 'pune1')
+c2=Company(name='cogni', address = 'pun2')
+c3=Company(name='persi', address = 'pune3')
+c4=Company(name='tcs', address = 'pune4')
+c1.eid=1
+c2.employees=e2
+e3.company=c3
+db.session.add_all([c1,c2,c3])
+db.session.commit()
+
+..................................................................OneToMany...................................................
+
+import os
+os.getcwd()
+os.chdir('E:\\python_my_practice\\flaskproj\\assosciation_relationship\\')
+from OneToOne import *
+db.create_all()
+c1=Company(name='infy', address = 'pune1')
+c2=Company(name='cogni', address = 'pun2')
+c3=Company(name='persi', address = 'pune3')
+c4=Company(name='tcs', address = 'pune4')
+e1 =Employee(name='pgh', age=25, salary=28000)
+e2 =Employee(name='agh', age=26, salary=20000)
+e3 =Employee(name='ggh', age=28, salary=26000)
+e4 =Employee(name='sgh', age=24, salary=27000)
+e5 =Employee(name='gsh', age=22, salary=29000)
+db.session.add_all([e1,e2,e3,e4,e5])
+db.session.commit()
